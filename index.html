@@ -9,7 +9,7 @@
 
     <body>
 
-        <!-- Sticky Navigation-->
+        <!--Navigation-->
         <nav id="navbar">
             <div class="logo">DesignX</div>
             <ul class="nav-links">
@@ -19,6 +19,60 @@
                 <li><a href="#idk4">IDK4</a></li>
             </ul>
         </nav>
-        
+
+        <!-- Main Scroll Container for GSAP Animations -->
+        <main id="smooth-wrapper">
+            <div id="smooth-content">
+
+                <!-- 1. The Hook -->
+                <section id="hero" class="scroll-section">
+                    <div class="content-block">
+                        <h1>DesignX</h1>
+                        <p class="subtitle">The official UI/UX and design architecture club of IIT Bhilai.</p>
+                    </div>
+                </section>
+
+                <!-- 2. The Mission -->
+                <section id="about" class="scroll-section dark-dimension">
+                    <div class="content-block">
+                        <h2>Bridging Imagination & Execution</h2>
+                        <p>We teach industry-standard tools, elevate the aesthetics of student events, and build intuitive digital experiences. This is where ideas take form.</p>
+                    </div>
+                </section>
+
+                <!-- 3. The Archive (JSON Target) -->
+                <section id="archive" class="scroll-section">
+                    <div class="content-block">
+                        <h2>Our Archive</h2>
+                        <div id="project-container" class="grid-layout">
+                            <!-- Projects will be injected here via JSON -->
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 4. The Faces (JSON Target) -->
+                <section id="members" class="scroll-section dark-dimension">
+                    <div class="content-block">
+                        <h2>The Core Team</h2>
+                        <div id="member-container" class="grid-layout">
+                            <!-- Members will be injected here via JSON -->
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 5. Call to Action -->
+                <section id="join" class="scroll-section">
+                    <div class="content-block">
+                        <h2>Ready to build?</h2>
+                        <form class="join-form" action="#" method="POST">
+                            <input type="text" placeholder="Your Name" required>
+                            <input type="email" placeholder="Your Email" required>
+                            <button type="submit">Join DesignX</button>
+                        </form>
+                    </div>
+                </section>
+                
+            </div>
+        </main>
     </body>
 </html>
