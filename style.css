@@ -73,11 +73,15 @@ body {
     justify-content: center;
     padding: 6rem 2rem 2rem; 
     text-align: center;
+    background-color: #050505;
+    position: relative;
+    z-index: 1;
 }
 
 /* Alternating Dimension Backgrounds */
 .dark-dimension {
     background-color: #0a0a0a;
+    z-index: 2;
 }
 
 /* Typography & Layout */
