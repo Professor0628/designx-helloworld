@@ -10,7 +10,6 @@
 body {
     background-color: #050505;
     color: #ffffff;
-    overflow-x: hidden;
 }
 
 /* Sticky Navbar */
@@ -156,4 +155,8 @@ p {
 
 .join-form button:hover {
     background: #ccc;
+}
+
+#smooth-wrapper {
+    overflow-x: hidden;
 }
