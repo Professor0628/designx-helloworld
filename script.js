@@ -175,12 +175,14 @@ document.addEventListener("DOMContentLoaded", () => {
             setTimeout(() => {
                 submitBtn.innerText = "TACTICAL TEAM DEPLOYED";
                 
-                fbiSound.currentTime = 0;
-                console.log("Browser blocked the FBI audio, sad.", err);
+                try {
+                    fbiSound.currentTime = 0;
+                    fbiSound.play().catch(() => console.log("Audio blocked by browser"));
+                } catch(e) {}
                 
                 if(fbiOverlay) {
                     const gifImage = fbiOverlay.querySelector('img');
-                    if(gifImage) gifImage.src = gifImage.src; 
+                    if(gifImage) gifImage.src = 'fbi.gif'; 
                     
                     fbiOverlay.style.display = "flex";
                 }
