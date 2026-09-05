@@ -1,87 +1,67 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>DesignX | IIT Bhilai</title>
-        <link rel="icon" type="image/jpeg" href="designxlogo.jpg">
-        <link rel="stylesheet" href="style.css">
-    </head>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DesignX | IIT Bhilai</title>
+    <link rel="icon" type="image/jpeg" href="designxlogo.jpg">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-    <body>
+    <nav id="navbar">
+        <div class="brand-container">
+            <img src="designxlogo.jpg" alt="DesignX Logo" class="nav-logo">
+            <a href="index.html" class="logo" style="color: inherit; text-decoration: none;">DesignX</a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="archive.html">Archive</a></li>
+            <li><a href="members.html">Members</a></li>
+            <li><a href="index.html#join">Join</a></li>
+        </ul>
+    </nav>
 
-        <!--Navigation-->
-        <nav id="navbar">
-            <div class="brand-container">
-                <img src="designxlogo.jpg" alt="DesignX Logo" class="nav-logo">
-                <div class="logo">DesignX</div>
-            </div>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#archive">Archive</a></li>
-                <li><a href="#members">Members</a></li>
-                <li><a href="#join">Join</a></li>
-            </ul>
-        </nav>
+    <main id="smooth-wrapper">
+        <div id="smooth-content">
 
-        <!-- Main Scroll Container for GSAP Animations -->
-        <main id="smooth-wrapper">
-            <div id="smooth-content">
+            <section id="hero" class="scroll-section">
+                <div class="content-block">
+                    <h1>DesignX</h1>
+                    <p class="subtitle">HAPI HAPI HAPI.</p>
+                </div>
+            </section>
 
-                <!-- 1. The Hook -->
-                <section id="hero" class="scroll-section">
-                    <div class="content-block">
-                        <h1>DesignX</h1>
-                        <p class="subtitle">The official UI/UX and design architecture club of IIT Bhilai.</p>
-                    </div>
-                </section>
+            <section id="mission" class="scroll-section dark-dimension">
+                <div class="content-block">
+                    <h2>The Visual Frontline</h2>
+                    <p>LOLOLOL.</p>
+                </div>
+            </section>
 
-                <!-- 2. The Mission -->
-                <section id="about" class="scroll-section dark-dimension">
-                    <div class="content-block">
-                        <h2>Bridging Imagination & Execution</h2>
-                        <p>We teach industry-standard tools, elevate the aesthetics of student events, and build intuitive digital experiences. This is where ideas take form.</p>
-                    </div>
-                </section>
+            <section id="pitch" class="scroll-section">
+                <div class="content-block">
+                    <h2>bleh.</h2>
+                    <p>LOLOLOL.</p>
+                </div>
+            </section>
 
-                <!-- 3. The Archive (JSON Target) -->
-                <section id="archive" class="scroll-section">
-                    <div class="content-block">
-                        <h2>Our Archive</h2>
-                        <div id="project-container" class="grid-layout">
-                            <!-- Projects will be injected here via JSON -->
-                        </div>
-                    </div>
-                </section>
+            <section id="join" class="scroll-section dark-dimension">
+                <div class="content-block">
+                    <h2>Ready to build?</h2>
+                    <form class="join-form" action="#" method="POST">
+                        <input type="text" placeholder="Your Name" required>
+                        <input type="email" placeholder="Your Email" required>
+                        <button type="submit">Join DesignX</button>
+                    </form>
+                </div>
+            </section>
 
-                <!-- 4. The Faces (JSON Target) -->
-                <section id="members" class="scroll-section dark-dimension">
-                    <div class="content-block">
-                        <h2>The Core Team</h2>
-                        <div id="member-container" class="grid-layout">
-                            <!-- Members will be injected here via JSON -->
-                        </div>
-                    </div>
-                </section>
+        </div>
+    </main>
 
-                <!-- 5. Call to Action -->
-                <section id="join" class="scroll-section">
-                    <div class="content-block">
-                        <h2>Ready to build?</h2>
-                        <form class="join-form" action="#" method="POST">
-                            <input type="text" placeholder="Your Name" required>
-                            <input type="email" placeholder="Your Email" required>
-                            <button type="submit">Join DesignX</button>
-                        </form>
-                    </div>
-                </section>
-                
-            </div>
-        </main>
-        <!-- GSAP Animation Libraries -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-        <!-- Scripts -->
-        <script src="script.js"></script>
-    </body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="script.js"></script>
+</body>
 </html>

@@ -160,3 +160,10 @@ p {
 #smooth-wrapper {
     overflow-x: hidden;
 }
+
+.standard-page {
+    min-height: 100vh;
+    padding: 120px 2rem 4rem; /* 120px pushes content safely below the navbar */
+    background-color: #050505;
+    text-align: center;
+}
