@@ -52,7 +52,7 @@ document.addEventListener("DOMContentLoaded", () => {
     function initGSAP() {
         const sections = gsap.utils.toArray('.scroll-section');
 
-        sections.forEach((section, index) => {
+        sections.forEach((section, index)   => {
             section.style.zIndex = index;
 
             if (index !== sections.length - 1) {
@@ -80,6 +80,19 @@ document.addEventListener("DOMContentLoaded", () => {
                     }
                 );
             }
+
+            if (index !== sections.length - 1) {
+                gsap.to(content, {
+                    opacity: 0,
+                    y: -50,
+                    scrollTrigger: {
+                        trigger: section,
+                        start: "top top",
+                        end: "+=300",
+                        scrub: true
+                    }
+                });
+            }   
         });
 
         ScrollTrigger.refresh();
