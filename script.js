@@ -62,7 +62,7 @@ document.addEventListener("DOMContentLoaded", () => {
                         card.style.maxWidth = '500px';
                     }
                     
-                    const safeImageName = member.name.replace(/ /g, '%20') + '.jpg';
+                    const safeImageName = member.name.toLowerCase().replace(/ /g, '%20') + '.jpg';
                     
                     card.innerHTML = `
                         <div style="width: 100%; height: 350px; overflow: hidden; border-radius: 2px; margin-bottom: 1.5rem; border: 1px solid rgba(255,255,255,0.05);">
