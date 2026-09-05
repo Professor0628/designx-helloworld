@@ -4,33 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Archive | DesignX</title>
+
     <link rel="icon" type="image/jpeg" href="designxlogo.jpg">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Space+Grotesk:wght@500;700&family=Space+Mono&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="ambient-background">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+    </div>
 
-    <nav id="navbar">
-        <div class="brand-container">
-            <img src="designxlogo.jpg" alt="DesignX Logo" class="nav-logo">
-            <a href="index.html" class="logo" style="color: inherit; text-decoration: none;">DesignX</a>
+    <nav id="navbar" aria-label="Main Navigation">
+        <div class="brand-container" style="display: flex; align-items: center; gap: 0.8rem;">
+            <img src="designxlogo.jpg" alt="DesignX Logo" style="width: 32px; height: 32px; object-fit: contain;">
+            <div class="logo">DESIGNX</div>
         </div>
         <ul class="nav-links">
             <li><a href="index.html">Home</a></li>
-            <li><a href="archive.html">Archive</a></li>
+            <li><a href="archive.html" style="color: #ffffff;" aria-current="page">Archive</a></li>
             <li><a href="members.html">Members</a></li>
             <li><a href="index.html#join">Join</a></li>
         </ul>
     </nav>
 
-    <main class="standard-page">
-        <div class="content-block" style="margin: 0 auto;">
-            <h1>The Archive</h1>
-            <p class="subtitle">A record of everything we have built.</p>
-            <!-- JSON injects here -->
-            <div id="project-container" class="grid-layout"></div> 
-        </div>
-    </main>
+    <div id="smooth-wrapper">
+        <div class="standard-page" style="position: relative; z-index: 1; text-align: center; max-width: 1200px; margin: 0 auto; padding-top: 120px;">
+            
+            <p style="font-family: 'Space Mono', monospace; font-size: 0.9rem; color: #003cff; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 0.5rem;">Visual Logs</p>
+            <h1 style="font-size: 4rem; font-weight: 700; color: #fff; text-transform: uppercase; letter-spacing: -2px; margin-bottom: 1rem;">The Archive</h1>
+            <p style="font-size: 1.2rem; color: #a0a0a0; margin-bottom: 4rem; max-width: 600px; margin-left: auto; margin-right: auto;">Unfiltered evidence of our 2 AM sprints, chaotic workshops, and whatever happened with that spray paint.</p>
+            
+            <div id="project-container" class="grid-layout"></div>
 
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>

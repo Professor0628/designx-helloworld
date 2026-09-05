@@ -1,28 +1,71 @@
 {
-  "projects": [
-    {
-      "title": "Aurafarming",
-      "description": "Farming aura."
-    },
-    {
-      "title": "BLEH",
-      "description": "BLEHHHH."
-    },
-    {
-      "title": "MLEH",
-      "description": "MLEHHHH."
-    }
+  "gallery": [
+    { "image": "photo1.jpg", "alt": "Proof that we occasionally go outside (even if it is just to legally vandalize things)." },
+    { "image": "photo2.jpg", "alt": "High-tech club. Uses 45 pieces of paper and a single green marker to plan everything." },
+    { "image": "photo3.jpg", "alt": "Shoutout to the people on the bench just trying to exist." },
+    { "image": "photo4.jpg", "alt": "Intro session. At least half the room was just dragged here by a friend." },
+    { "image": "photo5.jpg", "alt": "Beige shirt is fighting for his life—blink twice for help." }  
   ],
   "members": [
     {
-      "name": "Mehul bhaiyaaaa",
-      "role": "Core",
-      "quote": "Mehul bhaiya ke aage koi bol skta hai kyaaaa."
+      "name": "Parinitha",
+      "role": "Coordinator",
+      "quote": "Orchestrating creativity and structure into a single, unified vision.",
+      "image": "parinitha.jpg"
     },
     {
-      "name": "Lionel Mausi",
-      "role": "UI Engineer",
-      "quote": "HES THE GOAT!"
+      "name": "Shaoni Mistry",
+      "role": "Content Head",
+      "quote": "Shaping the narratives that give our design its voice.",
+      "image": "shaoni.jpg"
+    },
+    {
+      "name": "Divij Sharma",
+      "role": "Operations Head",
+      "quote": "Engineering the invisible systems that make digital art possible.",
+      "image": "divij.jpg"
+    },
+    {
+      "name": "Mehul Arora",
+      "role": "Graphic Design Head",
+      "quote": "MEHUL BHAIYA KE AAGE KOI BOL SKTA HAI KYAAA, MEHUL BHAIIII",
+      "image": "mehul.jpg"
+    },
+    {
+      "name": "Ananya Ashaputre",
+      "role": "Graphic Design Head",
+      "quote": "Crafting bold aesthetics that leave a lasting impression.",
+      "image": "ananya.jpg"
+    },
+    {
+      "name": "Angela",
+      "role": "Digital Arts Head",
+      "quote": "Pushing the absolute boundaries of canvas and pixel.",
+      "image": "angela.jpg"
+    },
+    {
+      "name": "Sharvari Bhute",
+      "role": "Digital Arts Head",
+      "quote": "The intersection where pure imagination meets digital reality.",
+      "image": "sharvari.jpg"
+    },
+    {
+      "name": "Garvit Sharma",
+      "role": "3D Design Head",
+      "quote": "Sculpting depth, physics, and dimension in a flat world.",
+      "image": "garvit.jpg"
+    },
+    {
+      "name": "Siddhi Singh",
+      "role": "UI/UX Head",
+      "quote": "Architecting interfaces that feel intuitive and inevitable.",
+      "image": "siddhi.jpg"
+    },
+    {
+      "name": "Nishita Kolhe",
+      "role": "Media & Outreach Head",
+      "quote": "Bridging the gap between our visual stories and the world.",
+      "image": "nishita.jpg"
     }
   ]
 }

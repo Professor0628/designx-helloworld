@@ -4,33 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Members | DesignX</title>
+
     <link rel="icon" type="image/jpeg" href="designxlogo.jpg">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Space+Grotesk:wght@500;700&family=Space+Mono&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="members-page-background">
+        <div class="slant slant-blue"></div>
+        <div class="slant slant-purple"></div>
+        <div class="slant slant-orange"></div>
+    </div>
 
     <nav id="navbar">
-        <div class="brand-container">
-            <img src="designxlogo.jpg" alt="DesignX Logo" class="nav-logo">
-            <a href="index.html" class="logo" style="color: inherit; text-decoration: none;">DesignX</a>
+        <div class="brand-container" style="display: flex; align-items: center; gap: 0.8rem;">
+            <img src="designxlogo.jpg" alt="DesignX Logo" style="width: 32px; height: 32px; object-fit: contain;">
+            <div class="logo">DESIGNX</div>
         </div>
         <ul class="nav-links">
             <li><a href="index.html">Home</a></li>
             <li><a href="archive.html">Archive</a></li>
-            <li><a href="members.html">Members</a></li>
+            <li><a href="members.html" style="color: #ffffff;">Members</a></li>
             <li><a href="index.html#join">Join</a></li>
         </ul>
     </nav>
 
-    <main class="standard-page">
-        <div class="content-block" style="margin: 0 auto;">
-            <h1>The Core Team</h1>
-            <p class="subtitle">The architects behind the screens.</p>
-            <!-- JSON injects here -->
+    <div id="smooth-wrapper">
+        <div class="standard-page">
+            
+            <h1 style="margin-top: 4rem;">The Grid</h1>
+            <p class="subtitle">Running on caffeine, keyframes, and sheer panic.</p>
+            
             <div id="member-container" class="grid-layout"></div>
-        </div>
-    </main>
 
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>

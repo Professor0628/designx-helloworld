@@ -4,7 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DesignX | IIT Bhilai</title>
+    
+    <meta name="description" content="DesignX is the official UI/UX, graphic design, and digital arts club of IIT Bhilai.">
     <link rel="icon" type="image/jpeg" href="designxlogo.jpg">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Space+Grotesk:wght@500;700&family=Space+Mono&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -13,16 +20,17 @@
         <div class="orb orb-2"></div>
         <div class="orb orb-3"></div>
     </div>
-    <nav id="navbar">
-        <div class="brand-container">
-            <img src="designxlogo.jpg" alt="DesignX Logo" class="nav-logo">
-            <a href="index.html" class="logo" style="color: inherit; text-decoration: none;">DesignX</a>
+    
+    <nav id="navbar" aria-label="Main Navigation">
+        <div class="brand-container" style="display: flex; align-items: center; gap: 0.8rem;">
+            <img src="designxlogo.jpg" alt="DesignX Club Logo" style="width: 32px; height: 32px; object-fit: contain;">
+            <div class="logo">DESIGNX</div>
         </div>
         <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html" style="color: #ffffff;" aria-current="page">Home</a></li>
             <li><a href="archive.html">Archive</a></li>
             <li><a href="members.html">Members</a></li>
-            <li><a href="index.html#join">Join</a></li>
+            <li><a href="#join">Join</a></li>
         </ul>
     </nav>
 
@@ -30,33 +38,54 @@
         <div id="smooth-content">
 
             <section id="hero" class="scroll-section">
-                <div class="content-block">
-                    <h1>DesignX</h1>
-                    <p class="subtitle">HAPI HAPI HAPI.</p>
+                <div class="content-block" style="text-align: center;">
+                    <h1 style="font-size: 5rem; font-weight: 700; letter-spacing: -3px; text-transform: uppercase; margin-bottom: 0.5rem; line-height: 1;">DesignX</h1>
+                    <p style="font-size: 1.2rem; color: #a0a0a0; font-family: 'Space Mono', monospace; letter-spacing: 1px; margin-bottom: 3rem;">THE CREATIVE POWERHOUSE OF IIT BHILAI</p>
+                    <a href="#join" id="troll-btn" style="padding: 1.2rem 3rem; background: #dc143c; color: white; text-decoration: none; font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 1.1rem; text-transform: uppercase; letter-spacing: 2px; border-radius: 2px; transition: background 0.3s ease; box-shadow: 0 10px 30px rgba(220, 20, 60, 0.3);">Gain Access</a>
                 </div>
             </section>
 
             <section id="mission" class="scroll-section dark-dimension">
-                <div class="content-block">
-                    <h2>The Visual Frontline</h2>
-                    <p>LOLOLOL.</p>
+                <div class="content-block members-card" style="max-width: 900px; margin: 0 auto; text-align: left; padding: 4rem;">
+                    <p style="font-family: 'Space Mono', monospace; font-size: 0.9rem; color: #003cff; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 1rem;">01 // System Overview</p>
+                    <h2 style="font-size: 3.5rem; font-weight: 700; color: #fff; margin-bottom: 1.5rem; text-transform: uppercase; letter-spacing: -1px; line-height: 1.1;">Refining Digital Artistry.</h2>
+                    <p style="font-size: 1.25rem; color: #ccc; line-height: 1.7; font-family: 'Inter', sans-serif;">We are the UI/UX, graphic design, and 3D art club of IIT Bhilai. We don't just push pixels—we build interfaces, design brand identities, and actually know how to align a div. If it looks good on campus, we probably made it.</p>
                 </div>
             </section>
 
             <section id="pitch" class="scroll-section">
-                <div class="content-block">
-                    <h2>bleh.</h2>
-                    <p>LOLOLOL.</p>
+                <div class="content-block" style="max-width: 900px; margin: 0 auto; text-align: left;">
+                    <p style="font-family: 'Space Mono', monospace; font-size: 0.9rem; color: #a200ff; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 1rem;">02 // Core Architecture</p>
+                    <h2 style="font-size: 3rem; font-weight: 700; color: #fff; margin-bottom: 1.5rem; text-transform: uppercase; letter-spacing: -1px;">Industry Standard.</h2>
+                    <p style="font-size: 1.2rem; color: #ccc; line-height: 1.6; margin-bottom: 3rem;">Figma, Illustrator, Blender, you name it. We host late-night workshops, design sprints, and chaotic collab sessions so you can stop making ugly presentation slides and start building actual portfolios.</p>
+                    
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem;">
+                        <div class="members-card" style="padding: 2rem; border-bottom: 3px solid #dc143c;">
+                            <h4 style="color: #fff; font-family: 'Space Mono', monospace; font-size: 1.1rem; letter-spacing: 1px; margin: 0;">UI/UX</h4>
+                        </div>
+                        <div class="members-card" style="padding: 2rem; border-bottom: 3px solid #a200ff;">
+                            <h4 style="color: #fff; font-family: 'Space Mono', monospace; font-size: 1.1rem; letter-spacing: 1px; margin: 0;">GRAPHIC DESIGN</h4>
+                        </div>
+                        <div class="members-card" style="padding: 2rem; border-bottom: 3px solid #ff6400;">
+                            <h4 style="color: #fff; font-family: 'Space Mono', monospace; font-size: 1.1rem; letter-spacing: 1px; margin: 0;">3D ARTS</h4>
+                        </div>
+                        <div class="members-card" style="padding: 2rem; border-bottom: 3px solid #003cff;">
+                            <h4 style="color: #fff; font-family: 'Space Mono', monospace; font-size: 1.1rem; letter-spacing: 1px; margin: 0;">BRANDING</h4>
+                        </div>
+                    </div>
                 </div>
             </section>
 
             <section id="join" class="scroll-section dark-dimension">
-                <div class="content-block">
-                    <h2>Ready to build?</h2>
-                    <form class="join-form" action="#" method="POST">
-                        <input type="text" placeholder="Your Name" required>
-                        <input type="email" placeholder="Your Email" required>
-                        <button type="submit">Join DesignX</button>
+                <div class="content-block members-card" style="text-align: center; width: 100%; max-width: 600px; margin: 0 auto; padding: 4rem;">
+                    <p style="font-family: 'Space Mono', monospace; font-size: 0.9rem; color: #ff6400; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 1rem;">03 // Network Access</p>
+                    <h2 style="font-size: 3rem; font-weight: 700; color: #fff; margin-bottom: 0.5rem; text-transform: uppercase; letter-spacing: -1px;">Join The Grid.</h2>
+                    <p style="font-size: 1.1rem; color: #a0a0a0; margin-bottom: 3rem;">Enter your credentials below to receive recruitment updates and workshop schedules.</p>
+                    
+                    <form class="join-form" action="#" method="POST" style="display: flex; flex-direction: column; gap: 1.5rem;">
+                        <input type="text" aria-label="Full Name" placeholder="Student Name" required style="padding: 1.2rem; background: rgba(0,0,0,0.5); border: 1px solid rgba(255,255,255,0.2); color: #fff; font-family: 'Inter', sans-serif; font-size: 1rem; border-radius: 2px; outline: none; transition: border-color 0.3s ease;">
+                        <input type="email" aria-label="Student Email Address" placeholder="Email Address" required style="padding: 1.2rem; background: rgba(0,0,0,0.5); border: 1px solid rgba(255,255,255,0.2); color: #fff; font-family: 'Inter', sans-serif; font-size: 1rem; border-radius: 2px; outline: none; transition: border-color 0.3s ease;">
+                        <button type="submit" style="padding: 1.2rem; margin-top: 1rem; background: #fff; color: #000; border: none; font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 1.1rem; text-transform: uppercase; letter-spacing: 2px; cursor: pointer; border-radius: 2px; transition: all 0.3s ease;">Submit Application</button>
                     </form>
                 </div>
             </section>
@@ -67,5 +96,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
     <script src="script.js"></script>
+    <div id="fbi-overlay" style="display: none; position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background: #000; z-index: 9999; justify-content: center; align-items: center;">
+        <img src="fbi.gif" alt="FBI Open Up" style="width: 100%; height: 100%; object-fit: contain;">
+    </div>
 </body>
 </html>
