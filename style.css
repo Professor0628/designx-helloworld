@@ -34,6 +34,19 @@ body {
     letter-spacing: 2px;
 }
 
+.brand-container {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.nav-logo {
+    height: 32px;
+    width: 32px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
 .nav-links {
     list-style: none;
     display: flex;

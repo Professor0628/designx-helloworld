@@ -1,0 +1,28 @@
+{
+  "projects": [
+    {
+      "title": "Aurafarming",
+      "description": "Farming aura."
+    },
+    {
+      "title": "BLEH",
+      "description": "BLEHHHH."
+    },
+    {
+      "title": "MLEH",
+      "description": "MLEHHHH."
+    }
+  ],
+  "members": [
+    {
+      "name": "Mehul bhaiyaaaa",
+      "role": "Core",
+      "quote": "Mehul bhaiya ke aage koi bol skta hai kyaaaa."
+    },
+    {
+      "name": "Dani Daniels",
+      "role": "UI Engineer",
+      "quote": "We build dimensions, not just web pages. We like it black."
+    }
+  ]
+}
