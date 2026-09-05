@@ -1,0 +1,142 @@
+/* Base Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', -apple-system, sans-serif;
+}
+
+/* Global Dark Mode */
+body {
+    background-color: #050505;
+    color: #ffffff;
+    overflow-x: hidden;
+}
+
+/* Sticky Navbar */
+#navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 1.5rem 3rem;
+    background: rgba(5, 5, 5, 0.7);
+    backdrop-filter: blur(12px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 999;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-links a {
+    color: #a0a0a0;
+    text-decoration: none;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #ffffff;
+}
+
+/* Section Architecture for Scroll-Jacking */
+.scroll-section {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6rem 2rem 2rem; 
+    text-align: center;
+}
+
+/* Alternating Dimension Backgrounds */
+.dark-dimension {
+    background-color: #0a0a0a;
+}
+
+/* Typography & Layout */
+.content-block {
+    max-width: 800px;
+    width: 100%;
+}
+
+h1 {
+    font-size: 6rem;
+    font-weight: 800;
+    letter-spacing: -2px;
+    margin-bottom: 1rem;
+    background: linear-gradient(180deg, #fff, #555);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+h2 {
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+}
+
+p {
+    font-size: 1.25rem;
+    color: #888;
+    line-height: 1.6;
+}
+
+.subtitle {
+    font-size: 1.5rem;
+    color: #aaa;
+}
+
+/* Grid Layout for JSON Data */
+.grid-layout {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+/* Forms */
+.join-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 400px;
+    margin: 2rem auto 0;
+}
+
+.join-form input {
+    padding: 1rem;
+    background: #111;
+    border: 1px solid #333;
+    color: #fff;
+    border-radius: 4px;
+}
+
+.join-form button {
+    padding: 1rem;
+    background: #fff;
+    color: #000;
+    border: none;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background 0.3s ease;
+}
+
+.join-form button:hover {
+    background: #ccc;
+}
